@@ -129,7 +129,7 @@ const OOPSection = () => {
                                             className="font-mono text-sm leading-relaxed text-slate-300"
                                         >
                                             <code>
-                                                {concepts.find(c => c.id === activeTab).code}
+                                                {concepts.find(c => c.id === activeTab).code} 
                                             </code>
                                         </motion.pre>
                                     </AnimatePresence>
@@ -143,4 +143,4 @@ const OOPSection = () => {
     );
 };
 
-export default OOPSection;
+export default OOPSection; //hello
