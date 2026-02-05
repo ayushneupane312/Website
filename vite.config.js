@@ -18,6 +18,9 @@ export default defineConfig({
     }
   },
   base: '/',
+  resolve: {
+    extensions: ['.js', '.jsx', '.ts', '.tsx']
+  },
   server: {
     host: true,
     port: 3000
