@@ -1,0 +1,39 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-void text-slate-200 font-sans antialiased;
+  }
+
+  ::selection {
+    @apply bg-signal/30 text-signal;
+  }
+}
+
+@layer utilities {
+  .text-gradient-signal {
+    @apply bg-gradient-to-r from-signal via-depth to-signal bg-clip-text text-transparent;
+  }
+
+  .glass-panel {
+    @apply bg-void-100/60 backdrop-blur-xl border border-signal/10 shadow-panel;
+  }
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  @apply bg-void;
+}
+
+::-webkit-scrollbar-thumb {
+  @apply bg-void-200 rounded-full hover:bg-signal/30;
+}
