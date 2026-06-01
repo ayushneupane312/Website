@@ -6,7 +6,7 @@ export const site = {
   githubHandle: 'ayushneupane312',
   linkedinUrl: 'https://www.linkedin.com/in/neupaneayush/',
   linkedinHandle: 'neupaneayush',
-  profileImage: 'https://avatars.githubusercontent.com/u/174736512?v=4',
+  profileImage: '/ayush-profile.png',
   tags: ['DevOps Engineer', 'Full Stack Developer'],
   headline: 'Automating Infrastructure, Delivering Excellence',
   tagline:
