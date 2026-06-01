@@ -26,6 +26,12 @@ npm run build
 
 Edit `src/data/content.js`. Profile photo: add `public/ayush-profile.png` and update `site.profileImage`.
 
-## Deploy
+## Deploy (GitHub Pages)
 
-Push to `main` or `master` on `ayushneupane312/Website`. GitHub Actions deploys `dist/` to `gh-pages`. `public/CNAME` keeps the custom domain.
+1. Repo **Settings → Pages → Build and deployment**
+2. **Source:** choose **GitHub Actions** (not “Deploy from a branch” on `master`)
+3. Push to `master` — workflow **Deploy Portfolio** builds `dist/` and publishes it
+
+`public/CNAME` is copied into the build for **ayush-neupane.com.np**.
+
+**If you see `main.jsx` MIME errors:** Pages is serving raw source from `master`. Switch source to **GitHub Actions** or branch **`gh-pages`** only — never `master`.
